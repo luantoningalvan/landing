@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ofertas de Respeito · Grupo de ofertas no WhatsApp</title>
+<meta name="description" content="Grupo de WhatsApp com promoções de barba, ferramentas e bebidas do Mercado Livre e da Shopee. Desconto conferido antes de postar.">
+<meta name="theme-color" content="#0B1C14">
+
+<!-- Prévia do link (WhatsApp, Facebook). Depois de publicar, troque "og.jpg" pelo endereço completo, ex.: https://seusite.com.br/og.jpg -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ofertas de Respeito">
+<meta property="og:description" content="Barba, ferramentas e bebidas com desconto de verdade. Entra no grupo.">
+<meta property="og:image" content="og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" as="image" href="logo.webp" type="image/webp">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Big+Shoulders+Display:wght@800;900&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --mata: #0B1C14;        /* fundo, verde do brasão */
+    --mata-2: #11291D;      /* faixas */
+    --linha: #2B4A37;
+    --ouro: #D9B25F;
+    --ouro-claro: #F2D88E;
+    --ouro-escuro: #9A7630;
+    --creme: #F3EAD5;
+    --nevoa: #B3BFAE;       /* texto secundário */
+    --carimbo: #D4472C;
+
+    --display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+    --texto: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+    --gutter: clamp(16px, 5vw, 40px);
+    --largura: 1080px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--mata);
+    color: var(--creme);
+    font: 400 1.0625rem/1.55 var(--texto);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--ouro-claro); outline-offset: 3px; border-radius: 4px; }
+
+  .wrap { width: 100%; max-width: var(--largura); margin: 0 auto; padding: 0 var(--gutter); }
+
+  /* ---------- Botão ---------- */
+  .cta {
+    display: inline-flex; align-items: center; justify-content: center; gap: .6em;
+    min-height: 60px; padding: 0 1.6em;
+    background: linear-gradient(180deg, var(--ouro-claro) 0%, var(--ouro) 55%, #C79C45 100%);
+    color: #10231A;
+    font: 900 1.375rem/1 var(--display);
+    letter-spacing: .02em; text-transform: uppercase; text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 0 1px 0 rgba(255,255,255,.45) inset, 0 -2px 0 rgba(0,0,0,.18) inset, 0 10px 28px -10px rgba(217,178,95,.55);
+    transition: transform .15s ease, box-shadow .15s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .cta:hover { transform: translateY(-1px); box-shadow: 0 1px 0 rgba(255,255,255,.45) inset, 0 -2px 0 rgba(0,0,0,.18) inset, 0 14px 32px -10px rgba(217,178,95,.7); }
+  .cta:active { transform: translateY(1px); }
+  .cta svg { width: 1.15em; height: 1.15em; flex: none; }
+  .cta--grande { width: 100%; max-width: 420px; }
+
+  .letreiro {
+    margin: .9rem 0 0; color: var(--nevoa);
+    font-size: .9375rem; letter-spacing: .01em;
+  }
+  .letreiro span + span::before { content: "·"; margin: 0 .55em; color: var(--ouro-escuro); }
+
+  /* ---------- Hero ---------- */
+  .hero { padding: clamp(20px, 5vw, 64px) 0 clamp(48px, 8vw, 96px); }
+  .hero .wrap {
+    display: grid; gap: clamp(8px, 3vw, 56px);
+    grid-template-columns: 1fr; justify-items: center; text-align: center;
+  }
+  .hero__brasao { width: clamp(132px, 38vw, 380px); filter: drop-shadow(0 18px 40px rgba(0,0,0,.45)); }
+  .olho {
+    margin: 0 0 .6rem;
+    font: 800 .9375rem/1 var(--display); letter-spacing: .14em; text-transform: uppercase;
+    color: var(--ouro);
+  }
+  h1 {
+    margin: 0;
+    font: 900 clamp(2.6rem, 10.5vw, 5rem)/.9 var(--display);
+    text-transform: uppercase; letter-spacing: -.005em;
+    text-wrap: balance;
+  }
+  h1 em { font-style: normal; color: var(--ouro); }
+  .hero__sub {
+    margin: 1rem auto 1.5rem; max-width: 34ch;
+    font-size: clamp(1.0625rem, 2.6vw, 1.25rem); color: var(--creme); opacity: .9;
+  }
+
+  @media (min-width: 860px) {
+    .hero .wrap { grid-template-columns: 360px 1fr; justify-items: start; text-align: left; align-items: center; }
+    .hero__brasao { width: 360px; }
+    .hero__sub { margin-left: 0; }
+  }
+
+  /* ---------- Títulos de seção ---------- */
+  h2 {
+    margin: 0 0 .5rem;
+    font: 900 clamp(2.1rem, 7vw, 3.5rem)/.95 var(--display);
+    text-transform: uppercase; text-wrap: balance;
+  }
+  h2 em { font-style: normal; color: var(--ouro); }
+  .intro { margin: 0 0 2rem; max-width: 52ch; color: var(--nevoa); }
+
+  /* ---------- O que cai no grupo ---------- */
+  .catalogo { background: var(--mata-2); border-block: 1px solid var(--linha); padding: clamp(48px, 8vw, 88px) 0; }
+  .campos { display: grid; gap: 0; grid-template-columns: 1fr; margin: 0; padding: 0; list-style: none; }
+  .campo { padding: 1.25rem 0; border-top: 1px solid var(--linha); }
+  .campo:last-child { border-bottom: 1px solid var(--linha); }
+  .campo h3 {
+    margin: 0 0 .35rem;
+    font: 900 1.75rem/1 var(--display); text-transform: uppercase; color: var(--ouro);
+    display: flex; align-items: baseline; gap: .5rem;
+  }
+  .campo p { margin: 0; color: var(--creme); }
+  @media (min-width: 760px) {
+    .campos { grid-template-columns: repeat(3, 1fr); }
+    .campo, .campo:last-child { border: 0; border-left: 1px solid var(--linha); padding: .25rem 1.75rem 0; }
+    .campo:first-child { border-left: 0; padding-left: 0; }
+  }
+
+  /* ---------- O crivo (assinatura) ---------- */
+  .crivo { padding: clamp(56px, 9vw, 104px) 0; }
+  .provas { display: grid; gap: 28px; grid-template-columns: 1fr; align-items: start; }
+  @media (min-width: 860px) { .provas { grid-template-columns: 1fr 1fr; gap: 40px; } }
+
+  .prova { position: relative; margin: 0; }
+  .prova figcaption { margin-top: 1rem; color: var(--nevoa); font-size: 1rem; max-width: 42ch; }
+  .prova figcaption strong { color: var(--creme); font-weight: 600; }
+  .rotulo {
+    display: inline-block; margin-bottom: .75rem;
+    font: 800 .8125rem/1 var(--display); letter-spacing: .14em; text-transform: uppercase; color: var(--nevoa);
+  }
+
+  /* etiqueta de preço (a do brasão) */
+  .etiqueta {
+    position: relative; max-width: 400px;
+    padding: 26px 26px 26px 64px;
+    background: linear-gradient(160deg, #F6EDD8, #E6D5AE);
+    color: #2A2416;
+    clip-path: polygon(44px 0, 100% 0, 100% 100%, 44px 100%, 0 50%);
+    border-radius: 4px;
+  }
+  .etiqueta::before { /* furo */
+    content: ""; position: absolute; left: 22px; top: 50%; width: 14px; height: 14px; margin-top: -7px;
+    border-radius: 50%; background: var(--mata); box-shadow: inset 0 1px 2px rgba(0,0,0,.5);
+  }
+  .etiqueta__produto { margin: 0 0 .7rem; font-weight: 600; font-size: 1rem; }
+  .etiqueta__de { margin: 0; font-size: 1rem; color: #6B6150; }
+  .etiqueta__de s { text-decoration-thickness: 2px; }
+  .etiqueta__por { margin: 0; font: 900 2.75rem/1 var(--display); letter-spacing: -.01em; }
+  .etiqueta__off {
+    position: absolute; right: 18px; top: 18px;
+    padding: .35em .55em; border-radius: 6px;
+    background: #2A2416; color: #F6EDD8; font: 900 1.25rem/1 var(--display);
+  }
+
+  /* post no WhatsApp */
+  .zap {
+    max-width: 400px; border-radius: 14px; overflow: hidden;
+    background: #EFE7DE; color: #111B21;
+    box-shadow: 0 24px 48px -24px rgba(0,0,0,.6);
+  }
+  .zap__topo {
+    display: flex; align-items: center; gap: 10px; padding: 10px 14px;
+    background: #F0F2F5; border-bottom: 1px solid #DDD6CC;
+  }
+  .zap__topo img { width: 34px; height: 34px; border-radius: 50%; background: var(--mata); object-fit: contain; padding: 3px; }
+  .zap__topo b { display: block; font-size: .9375rem; font-weight: 600; }
+  .zap__topo small { display: block; font-size: .75rem; color: #667781; }
+  .zap__chat { padding: 14px; }
+  .zap__msg {
+    position: relative; padding: 8px 10px 20px; border-radius: 0 8px 8px 8px;
+    background: #fff; font: 400 .9375rem/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    box-shadow: 0 1px .5px rgba(11,20,26,.13);
+  }
+  .zap__msg p { margin: 0 0 .3em; }
+  .zap__msg p:last-of-type { margin-bottom: 0; }
+  .zap__msg .link { color: #027EB5; word-break: break-all; }
+  .zap__msg i { color: #54656F; }
+  .zap__hora { position: absolute; right: 8px; bottom: 4px; font-size: .6875rem; color: #667781; }
+
+  /* carimbos */
+  .carimbo {
+    position: absolute; z-index: 2; pointer-events: none;
+    padding: .2em .45em .1em;
+    font: 900 clamp(1.9rem, 7vw, 2.5rem)/1 var(--display); letter-spacing: .06em; text-transform: uppercase;
+    border: 4px double currentColor; border-radius: 8px;
+    box-shadow: 0 0 0 2px currentColor inset;
+    background: rgba(255,250,238,.82);
+    opacity: .92;
+  }
+  .carimbo--barrada { color: var(--carimbo); right: 2%; top: 116px; transform: rotate(-11deg); }
+  .carimbo--aprovada { color: #1F6B3F; right: 2%; top: 22px; transform: rotate(-8deg); }
+  @media (min-width: 860px) { .carimbo--barrada { right: 12%; } .carimbo--aprovada { right: 14%; } }
+  .crivo { overflow-x: clip; }
+
+  .js .carimbo { opacity: 0; transform: rotate(var(--rot)) scale(1.7); }
+  .js .carimbo--barrada { --rot: -11deg; }
+  .js .carimbo--aprovada { --rot: -8deg; }
+  .js .bateu .carimbo { animation: bate .38s cubic-bezier(.2,.9,.3,1.25) forwards; }
+  .js .prova + .prova .carimbo { animation-delay: .35s; }
+  @keyframes bate {
+    0%   { opacity: 0; transform: rotate(var(--rot)) scale(1.7); }
+    70%  { opacity: .92; transform: rotate(var(--rot)) scale(.96); }
+    100% { opacity: .92; transform: rotate(var(--rot)) scale(1); }
+  }
+
+  /* ---------- Fecho ---------- */
+  .fecho {
+    padding: clamp(56px, 9vw, 104px) 0;
+    text-align: center;
+    background:
+      radial-gradient(60% 80% at 50% 0%, rgba(217,178,95,.14), transparent 70%),
+      var(--mata-2);
+    border-top: 1px solid var(--linha);
+  }
+  .fecho h2 { margin-bottom: 1.5rem; }
+  .fecho .coroa { width: 44px; margin: 0 auto 1rem; color: var(--ouro); }
+
+  /* ---------- Rodapé ---------- */
+  footer { padding: 32px 0 calc(96px + env(safe-area-inset-bottom)); color: var(--nevoa); font-size: .875rem; }
+  footer p { margin: 0 0 .6rem; max-width: 70ch; }
+  .maior { color: var(--creme); font-weight: 600; }
+  @media (min-width: 860px) { footer { padding-bottom: 40px; } }
+
+  /* ---------- Barra fixa (celular) ---------- */
+  .barra {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
+    padding: 10px var(--gutter) calc(10px + env(safe-area-inset-bottom));
+    background: rgba(11,28,20,.92); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    border-top: 1px solid var(--linha);
+    transform: translateY(110%); transition: transform .25s ease;
+  }
+  .barra .cta { width: 100%; min-height: 54px; font-size: 1.25rem; }
+  .barra.ativa { transform: none; }
+  @media (min-width: 860px) { .barra { display: none; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .js .carimbo { opacity: .92; transform: rotate(var(--rot)); }
+  }
+</style>
+</head>
+<body>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <picture>
+        <source srcset="logo.webp" type="image/webp">
+        <img class="hero__brasao" src="logo.png" width="419" height="482" alt="Ofertas de Respeito" fetchpriority="high">
+      </picture>
+      <div>
+        <p class="olho">Grupo de ofertas no WhatsApp</p>
+        <h1>Oferta boa pra <em>barba</em>, pra <em>oficina</em> e pro <em>copo</em>.</h1>
+        <p class="hero__sub">As melhores promoções do Mercado Livre e da Shopee, com o desconto conferido antes de postar.</p>
+        <a class="cta cta--grande" id="cta-topo" href="https://chat.whatsapp.com/F0SPKEyeT0HCpnlzILqVgF?mode=gi_t" data-cta>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.66 15l-1.3 4.76 4.88-1.28A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-2.9.76.78-2.83-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.97-.15.16-.29.18-.54.06a6.7 6.7 0 0 1-3.32-2.9c-.25-.43.25-.4.72-1.33.08-.16.04-.3-.02-.43l-.76-1.83c-.2-.48-.4-.41-.56-.42h-.47a.9.9 0 0 0-.66.31 2.76 2.76 0 0 0-.86 2.05 4.8 4.8 0 0 0 1 2.55 11 11 0 0 0 4.2 3.7c1.56.68 2.18.73 2.96.62.48-.07 1.46-.6 1.67-1.18.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z"/></svg>
+          Entrar no grupo
+        </a>
+        <p class="letreiro"><span>Grátis</span><span>Só os admins postam</span><span>Sai quando quiser</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalogo" aria-labelledby="t-catalogo">
+    <div class="wrap">
+      <h2 id="t-catalogo">O que cai no grupo</h2>
+      <p class="intro">Três assuntos, e só. Nada de oferta de fralda nem de capinha de celular.</p>
+      <ul class="campos">
+        <li class="campo">
+          <h3>Barba</h3>
+          <p>Aparador, barbeador, máquina de cortar cabelo, óleo, balm e lâminas.</p>
+        </li>
+        <li class="campo">
+          <h3>Ferramentas</h3>
+          <p>Parafusadeira, furadeira, esmerilhadeira, tico-tico, lavadora de alta pressão e maleta de ferramentas.</p>
+        </li>
+        <li class="campo">
+          <h3>Bebidas</h3>
+          <p>Whisky, gin, vodka, cerveja, vinho, cachaça e energético.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="crivo" aria-labelledby="t-crivo">
+    <div class="wrap">
+      <h2 id="t-crivo">Desconto de mentira <em>não entra</em>.</h2>
+      <p class="intro">Tem loja que sobe o preço na véspera só pra anunciar "65% OFF". A gente acompanha o preço de cada produto todo dia e compara com as outras lojas. Se o desconto não for de verdade, o post não sai.</p>
+
+      <div class="provas">
+        <figure class="prova">
+          <span class="rotulo">O que a gente barra</span>
+          <div class="etiqueta" aria-hidden="true">
+            <p class="etiqueta__produto">Kit Barbeador 5 em 1</p>
+            <p class="etiqueta__de">De <s>R$ 716,90</s></p>
+            <p class="etiqueta__por">R$ 249,00</p>
+            <span class="etiqueta__off">−65%</span>
+          </div>
+          <span class="carimbo carimbo--barrada" aria-hidden="true">Barrada</span>
+          <figcaption><strong>Esse produto nunca custou R$ 716.</strong> O "De" foi inventado pra parecer desconto.</figcaption>
+        </figure>
+
+        <figure class="prova">
+          <span class="rotulo">O que chega no seu WhatsApp</span>
+          <div class="zap" aria-hidden="true">
+            <div class="zap__topo">
+              <img src="favicon.png" alt="" width="34" height="34">
+              <div><b>Ofertas de Respeito</b><small>Exemplo de post</small></div>
+            </div>
+            <div class="zap__chat">
+              <div class="zap__msg">
+                <p><b>Parafusadeira 12V com maleta e 2 baterias</b></p>
+                <p>🔥 <b>R$ 189,90</b></p>
+                <p>📉 24% abaixo do preço normal dos últimos 30 dias (R$ 249,90)</p>
+                <p>✅ Loja oficial</p>
+                <p>🛒 <span class="link">mercadolivre.com/sec/…</span></p>
+                <p><i>Preço conferido às 09:12. Pode mudar a qualquer momento.</i></p>
+                <span class="zap__hora">09:14</span>
+              </div>
+            </div>
+          </div>
+          <span class="carimbo carimbo--aprovada" aria-hidden="true">Aprovada</span>
+          <figcaption><strong>Preço comparado com o próprio histórico.</strong> E alguém confere na loja antes de mandar.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="fecho" aria-labelledby="t-fecho">
+    <div class="wrap">
+      <svg class="coroa" viewBox="0 0 48 32" aria-hidden="true"><path fill="currentColor" d="M4 10l9 8 11-16 11 16 9-8-4 20H8L4 10Z"/></svg>
+      <h2 id="t-fecho">Entra no grupo e compra <em>sem julgar</em>.</h2>
+      <a class="cta cta--grande" id="cta-fim" href="https://chat.whatsapp.com/F0SPKEyeT0HCpnlzILqVgF?mode=gi_t" data-cta>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.66 15l-1.3 4.76 4.88-1.28A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-2.9.76.78-2.83-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.97-.15.16-.29.18-.54.06a6.7 6.7 0 0 1-3.32-2.9c-.25-.43.25-.4.72-1.33.08-.16.04-.3-.02-.43l-.76-1.83c-.2-.48-.4-.41-.56-.42h-.47a.9.9 0 0 0-.66.31 2.76 2.76 0 0 0-.86 2.05 4.8 4.8 0 0 0 1 2.55 11 11 0 0 0 4.2 3.7c1.56.68 2.18.73 2.96.62.48-.07 1.46-.6 1.67-1.18.2-.58.2-1.07.14-1.18-.06-.1-.22-.16-.47-.29Z"/></svg>
+        Entrar no grupo
+      </a>
+      <p class="letreiro"><span>Grátis</span><span>Só os admins postam</span><span>Sai quando quiser</span></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="maior">🔞 Ofertas de bebida alcoólica são para maiores de 18 anos. Beba com moderação.</p>
+    <p>Somos afiliados do Mercado Livre e da Shopee: quando você compra pelo nosso link, a loja nos paga uma comissão, sem custo extra pra você. Não somos o Mercado Livre nem a Shopee. Preço e estoque são da loja e podem mudar a qualquer momento.</p>
+    <p>© 2026 Ofertas de Respeito</p>
+  </div>
+</footer>
+
+<div class="barra" id="barra" aria-hidden="true">
+  <a class="cta" href="https://chat.whatsapp.com/F0SPKEyeT0HCpnlzILqVgF?mode=gi_t" data-cta tabindex="-1">Entrar no grupo do WhatsApp</a>
+</div>
+
+<script>
+  /*
+   * Pixel da Meta (Facebook/Instagram Ads). Cole o ID do seu pixel aqui para medir
+   * visitas (PageView) e cliques no botão (evento Lead). Vazio = nada é carregado.
+   */
+  var META_PIXEL_ID = '';
+
+  document.documentElement.classList.add('js');
+
+  if (META_PIXEL_ID) {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', META_PIXEL_ID);
+    fbq('track', 'PageView');
+  }
+
+  document.querySelectorAll('[data-cta]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      if (!window.fbq) return;
+      // dá tempo do evento sair antes de trocar de página
+      e.preventDefault();
+      fbq('track', 'Lead', { content_name: a.id || 'barra' });
+      setTimeout(function () { location.href = a.href; }, 250);
+    });
+  });
+
+  if ('IntersectionObserver' in window) {
+    // carimbos batem quando aparecem na tela
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add('bateu'); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.55 });
+    document.querySelectorAll('.prova').forEach(function (el) { io.observe(el); });
+
+    // barra fixa só quando nenhum botão grande está visível
+    var barra = document.getElementById('barra');
+    var visiveis = new Set();
+    var io2 = new IntersectionObserver(function (es) {
+      es.forEach(function (en) { en.isIntersecting ? visiveis.add(en.target) : visiveis.delete(en.target); });
+      var mostrar = visiveis.size === 0;
+      barra.classList.toggle('ativa', mostrar);
+      barra.setAttribute('aria-hidden', mostrar ? 'false' : 'true');
+      barra.querySelector('a').tabIndex = mostrar ? 0 : -1;
+    });
+    io2.observe(document.getElementById('cta-topo'));
+    io2.observe(document.getElementById('cta-fim'));
+  } else {
+    document.querySelectorAll('.prova').forEach(function (el) { el.classList.add('bateu'); });
+  }
+</script>
+</body>
+</html>
